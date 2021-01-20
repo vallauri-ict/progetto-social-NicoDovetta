@@ -1,0 +1,67 @@
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none; /* Safari */
+		-khtml-user-select: none; /* Konqueror HTML */
+		-moz-user-select: none; /* Old versions of Firefox */
+			-ms-user-select: none; /* Internet Explorer/Edge */
+				user-select: none; /* Non-prefixed version, currently
+									supported by Chrome, Edge, Opera and Firefox */
+}
+
+.btn-reg{
+	text-align: center;
+	margin: 10px 0;
+	padding: 7px 60px;
+	border-radius: 18px;
+	box-shadow: 0 3px 18px rgba(0,0,0,.2);
+	font: 15px 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: white;
+	background: -webkit-linear-gradient(bottom right, #3fc43a, #77d640);
+}
+
+.reg-container{
+	text-align: center;
+	margin: 10px 0;
+	padding: 7px 60px;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0,0,0,.2);
+	color: white;
+	font: 15px 'Open Sans', sans-serif;
+	font-weight: bold;
+	background: -webkit-linear-gradient(bottom right, #3a86c4, #405bd6);
+}
+
+.title-reg {
+	margin-top: 5px;
+	color: white;
+	font: 23pt 'Open Sans';
+	font-weight: bold;
+}
+
+fieldset.groupbox-border {
+	border: 1px groove #ddd !important;
+	padding: 0 1.4em 1.4em 1.4em !important;
+	margin: 1.2em 1.2em 1.2em 1.2em !important;
+	-webkit-box-shadow:  0px 0px 0px 0px #000;
+			box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.groupbox-border {
+	font-size: 1.2em !important;
+	font-weight: bold !important;
+	text-align: left !important;
+	width:auto;
+	padding:0px 10px 0px 10px;
+	border-bottom:none;
+}

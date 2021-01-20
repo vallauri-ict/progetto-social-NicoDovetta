@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+	<title>Chatheon - Public chat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/chat.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src = "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.1/socket.io.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/nicescroll/3.5.4/jquery.nicescroll.js'></script>
+	<script type="application/javascript" src="./javascript/publicRoom.js"></script>
+	<script type="application/javascript" src="./javascript/library.js"></script>
+  </head>
+
+  <body>
+	<div style="margin-left: auto; margin-right: auto; margin-bottom: 1%; margin-top: 1%; width: fit-content;">
+		<h1 class="heading">Public room</h1>
+	</div>
+	<div id="connessione">
+		<div class="d-flex justify-content-center" style="margin-top: 2%;">
+			<div class="reg-container">
+			  <div class="row" style="margin-top: 10%;">
+				<div class="col-sm-12">
+					<input type="text" class="form-control input-group text" id="txtUser" placeholder="Username">
+				</div>
+			  </div>
+	
+			  <div class="row" style="margin-top: 10%;">
+				<div class="col-sm-12">
+					<input type="text" class="form-control input-group text" id="room_Id" placeholder="Room">
+				</div>
+			  </div>
+	
+			  <div class="div-login d-flex justify-content-center" id="divConnect" style="margin-top: 10%; margin-bottom: 10%;">
+				<button class="btn btn-success noselect" id="btnRoom">Generate room</button>
+				<div style="margin-left: 5%;">
+					<button class="btn btn-primary noselect" style="width:50%;height:45%; margin-bottom:5%;" id="btnCopy"><i class="fas fa-copy"></i></button>
+					<button class="btn btn-success noselect" style="width:50%;height:45%;" id="btnConnect"><i class="fas fa-sign-in-alt"></i></button>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div id="wrapper">
+		<div class="chat" style="width: 100%;">
+			<div class="top">
+				<div class="avatar">
+					<img width="50" height="50" src="img/logo_short_white_theme_v1.png" style="margin-top: -40px">
+				</div>
+				<div class="info" style="margin-left: 10px">
+					<div class="name">Chatheon - Public chat</div>
+					<div class="count">Do you come here often?</div>
+				</div>
+				<!--i class="fa fa-star"></i-->
+			</div>
+			<ul class="messages">
+
+			</ul>
+			<div class="write-form">
+				<textarea placeholder="Type your message" name="e" id="txtMessage" rows="2"></textarea>
+				<i class="fas fa-paperclip btn-chat" id="btnAllega" style="margin-bottom: 10px;"></i>
+				<input type="file" class="custom-file-input" id="inputGroupFile01" multiple>
+				<i class="fas fa-paper-plane btn-chat" id="btnInvia"></i>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+npm install http
+npm install express
+npm install nodemailer
+npm install cloudinary
+npm install bcriptjs
+npm install 
+npm install

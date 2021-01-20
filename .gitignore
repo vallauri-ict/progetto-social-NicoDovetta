@@ -1,0 +1,3 @@
+#ignorare la cartella e i file npm ed i file .bat
+node_modules
+*.bat
